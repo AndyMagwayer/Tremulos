@@ -1,0 +1,42 @@
+/* sizes: "artwork" is 600px x 400px, 100px round "sun", small stripe of "lake" 50px tall
+   colors: skyblue, gold, navy, dimgrey
+   CSS properties:  width, height, background-color, positioning (relative & absolute), display GRID, border-radius*/
+
+   body{min-height:100vh; background:dimgrey; display: grid; place-items:center;}
+
+   figure {
+       position: relative;
+       background-color: skyblue;
+       width: 600px;
+       height: 400px;
+       overflow: hidden;
+   }
+   
+   div {
+       position: absolute;
+   }
+   
+   .sun {
+       top: 100px;
+       right: 100px;
+       background: gold;
+       width: 100px;
+       height: 100px;
+       border-radius: 50%;
+   }
+   
+   .moon {
+       top: 400px;
+       right: 100px;
+       width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     box-shadow: 15px 15px 0 0 white;
+   }
+   
+   .lake {
+       bottom: 0;
+       background: navy;
+       height: 50px;
+       width: 100%;
+   }
